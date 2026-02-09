@@ -1,25 +1,25 @@
 class Rw < Formula
   desc "Documentation engine - CLI"
   homepage "https://github.com/yumike/rw"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/yumike/rw/releases/download/v0.1.2/rw-aarch64-apple-darwin.tar.xz"
-      sha256 "87ae0555ec5670218454debafd9b14ff3d9fa1af9f61cbcf8959c6ad0348f026"
+      url "https://github.com/yumike/rw/releases/download/v0.1.3/rw-aarch64-apple-darwin.tar.xz"
+      sha256 "00781b3e0ae365598c5f604418d6cd2ccbae4c6a89fa2c6e30df52896d412cf6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yumike/rw/releases/download/v0.1.2/rw-x86_64-apple-darwin.tar.xz"
-      sha256 "6c42dcb4c6a2be0ac30a69ddff5901995fc7833fc53f22021fb288499c364707"
+      url "https://github.com/yumike/rw/releases/download/v0.1.3/rw-x86_64-apple-darwin.tar.xz"
+      sha256 "a1f35c9c1d0398972a011f5f54c9da6d83b41388dd49537846127b3a114a8d80"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/yumike/rw/releases/download/v0.1.2/rw-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bbbaff73992f7cbe257f72acbc06e1f59c0a9b56584cd41f4e94d88c20838ae5"
+      url "https://github.com/yumike/rw/releases/download/v0.1.3/rw-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "37680407b991d0a7d6b132c21f52cea932503f5c734f4cfb58bad4b6eca0ef6d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yumike/rw/releases/download/v0.1.2/rw-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7cc5dc309318d417ed8fdd2d46003469bdda44a36aee8cc780ccfb187f28f545"
+      url "https://github.com/yumike/rw/releases/download/v0.1.3/rw-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c9c1e62b520cb19f7d9956dc755ac51c397ce2b51cf4e4fa31cc7481cba05238"
     end
   end
   license "MIT"
