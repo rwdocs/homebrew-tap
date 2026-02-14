@@ -1,35 +1,37 @@
 class Rw < Formula
   desc "Documentation engine - CLI"
   homepage "https://github.com/rwdocs/rw"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.5/rw-aarch64-apple-darwin.tar.xz"
-      sha256 "6f4ba14faab1b65b29d76afbe5fb8283bece873bc526aa26e45f2fb591590e8b"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.6/rw-aarch64-apple-darwin.tar.xz"
+      sha256 "ffe24a3011f5f09cab469d13af9b8262f473aa0968ace8dc1affdc8635ff583e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.5/rw-x86_64-apple-darwin.tar.xz"
-      sha256 "40ef8338e4b1897041a5d0e9db116107fb019210972eceeb249a43f9561461a0"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.6/rw-x86_64-apple-darwin.tar.xz"
+      sha256 "85a2923b8bf24c50a17dfa3ddfdc54c2dc35369704d5f92c36e22651edcc2b7b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.5/rw-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6695d68817ad2c302c97e7206f5e7cb9b500576ed08665bc93cf215ff75c3940"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.6/rw-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "40619b305d9e61d9ca7efc295f187f94b9277563cd44d65214051f22af567fb8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.5/rw-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4e40f328087286feb8b8ae6a805a90c3b119ecc032da02fa409613a47dc8cadb"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.6/rw-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "608987a7688714b6cae6a05ae49914db979f7ae58ee380125c4e3147db9f6f7f"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple
