@@ -5,21 +5,21 @@ class Rw < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/rwdocs/rw/releases/download/v0.1.9/rw-aarch64-apple-darwin.tar.xz"
-      sha256 "ef3308a174fcac7d6988e294f0cfe184d7f83d7571496d25311a3e78f9ace78e"
+      sha256 "f16fb5d11f18cff65d12a1a1803a17a8836b1e28925f3777bec92b71fd2a31a3"
     end
     if Hardware::CPU.intel?
       url "https://github.com/rwdocs/rw/releases/download/v0.1.9/rw-x86_64-apple-darwin.tar.xz"
-      sha256 "d058d4c5c3c80f95cbeed70a6142b46fe97de66ec9fc04ed7e5288b6be5c405a"
+      sha256 "a11d6514f4bcb56d51171b922f53f042dd4b02e6755520d9217fb191df19fe12"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/rwdocs/rw/releases/download/v0.1.9/rw-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6f21b98e36a51268315f32d09be93dd88434e3beffcf484bf36269d51d16eb79"
+      sha256 "183fd3d54401561759dc24947466a1a7c040c46359b786f134b3df2fd9a82b0c"
     end
     if Hardware::CPU.intel?
       url "https://github.com/rwdocs/rw/releases/download/v0.1.9/rw-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c5e2b2b0f3652b8601c73f9c2404886edafe822e637f13568ca65a4626d2dea9"
+      sha256 "4094727f03df801f8f2a1d5c0cdaf942dc4312c6ac01250bbeb048e111085596"
     end
   end
   license "MIT"
