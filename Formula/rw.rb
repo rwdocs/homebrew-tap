@@ -1,25 +1,25 @@
 class Rw < Formula
   desc "Documentation engine - CLI"
   homepage "https://github.com/rwdocs/rw"
-  version "0.1.24"
+  version "0.1.25"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.24/rw-aarch64-apple-darwin.tar.xz"
-      sha256 "35c1a3c3f7f5d3eb4b58fbb2e5ea467937affacd36ddaa6d1f711ae3c195b6c5"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.25/rw-aarch64-apple-darwin.tar.xz"
+      sha256 "7c3018e1217f400317ed0e96a3b5cf8cfd8f13c9d3a8570c5861c6d4150da090"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.24/rw-x86_64-apple-darwin.tar.xz"
-      sha256 "d696879fe7d1d836e848d4faf6ded4b3d0989ad7e704b131c544b36b87e77dce"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.25/rw-x86_64-apple-darwin.tar.xz"
+      sha256 "0bf4648328706444a013e05f8894bf58d76560d8f971ac7c4def4a7fef6f78d9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.24/rw-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "408754e0633fd37cc71be3cd0a2ab779b0d8a41a78974800859eb7a6236c6d25"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.25/rw-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b764c33d7093adc8adb69f64b0efb2de6c310a3aa6709243d2ffbe1f52ed89e9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rwdocs/rw/releases/download/v0.1.24/rw-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "38fed6db89fc351a32f1769ea0249d1bdf63640323b9f5f0282d0d2347711ec9"
+      url "https://github.com/rwdocs/rw/releases/download/v0.1.25/rw-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4cef3297759adca8948a258df8faede587a9b487297afd3fcf1e452ee64109db"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
